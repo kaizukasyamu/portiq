@@ -6,39 +6,64 @@ export default function Home() {
 
     <header className="flex justify-between items-center p-4 border-b font-bold">
       
-      <div>
-        ハンバーガー
-      </div>
+      <div className="flex gap-4">
 
-      <div>
+      <button>
+        ハンバーガー
+      </button>
+
+      <button>
         PortIQ
+      </button>
+
       </div>
       
-      <div>
-        使い方 ログイン
+      <div className="flex gap-4">
+
+      <button>
+        使い方
+      </button>
+
+      <button>
+        ログイン
+      </button>
+
       </div>
+
     </header>
 
     <div className="flex">
 
-     <aside className="w-64 flex flex-col gap-3 bg-gray-100 p-4 h-screen">
-
-      <h2>PortIQ</h2>
+     <aside className="w-48 bg-gray-100 p-4 h-screen flex flex-col justify-between">
       
-       <div>
-        <div>機能A</div>
+        <div className="flex flex-col gap-3 pl-4 pb-4">
 
-        <div>機能B</div>
+        <button className="w-full text-left rounded-md px-1 py-1 hover:bg-gray-200">
+          新しい添削</button>
 
-        <div>機能C</div>
+        <button className="w-full text-left rounded-md px-1 py-1 hover:bg-gray-200">
+          添削履歴</button>
+
+        <button className="w-full text-left rounded-md px-1 py-1 hover:bg-gray-200">
+          保存済み</button>
+
+        <button className="w-full text-left rounded-md px-1 py-1 hover:bg-gray-200">
+          PDF出力</button>
 
        </div>
 
-        <div>利用規約</div>
+       <div  className="flex flex-col gap-3 pl-4">
 
-        <div>お問い合わせ</div>
+        <button className="w-full text-left rounded-md px-1 py-1 hover:bg-gray-200">
+          利用規約</button>
 
-        <div>FQA</div>
+        <button className="w-full text-left rounded-md px-1 py-1 hover:bg-gray-200">
+          お問い合わせ</button>
+
+        <button className="w-full text-left rounded-md px-1 py-1 hover:bg-gray-200">
+          FAQ</button>
+
+       </div> 
 
      </aside>  
 
@@ -53,12 +78,15 @@ export default function Home() {
         placeholder="ここにポートフォリオを貼り付けてください"
       />          
       <div>
+
        <button 
         className="bg-blue-600 text-white px-3 py-1 rounded-lg"
        >  
         添削する
        </button>  
+
       </div>
+
      </main>
 
     </div>
