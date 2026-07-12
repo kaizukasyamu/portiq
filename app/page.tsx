@@ -1,4 +1,21 @@
+"use client";
+
 export default function Home() {
+
+  async function handleReview(){
+
+    await fetch("/api/grade",{
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        portfolio: "テスト",
+      }),
+    });
+
+  }
+
   return (
     
    <> 
@@ -81,6 +98,7 @@ export default function Home() {
 
        <button 
         className="bg-blue-600 text-white px-3 py-1 rounded-lg"
+        onClick={handleReview}
        >  
         添削する
        </button>  
